@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Biotech Prestige Mechlord Armor 1.4</name>
+	<author>Phonicmas</author>
+	<url></url>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>VanillaExpanded.VPsycastsE</li>
+	</loadAfter>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+		<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+	</modDependencies>
+	<packageId>Phonicmas.PrestigeMechlordArmor</packageId>
+	<description>A prestige version of the mechlord armor that i quickly threw together by recolouring the original armor and modifying stats. 
+	It counts as prestige armor for all those pesky royals out there, and gives a slight increase in bandwitdh and same psychic bonuses as other prestige armor.
+	If you have any suggestions for it or a better sprite for that matter let me know.
+	</description>
+</ModMetaData>

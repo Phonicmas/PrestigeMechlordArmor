@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Prestige Mechlord Suit -->
+
+    <ThingDef ParentName="ApparelArmorPowerBase">
+        <defName>Apparel_PrestigeMechlordSuit</defName>
+        <label>prestige mechlord suit</label>
+        <description>A power-assisted armor suit packed with mechanitor-assistance gear. The prestige mechlord suit dramatically amplifies a mechanitor's bandwidth, but is somewhat less protective than dedicated heavy armor. Expensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+        <recipeMaker>
+            <researchPrerequisite>UltraMechtech</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <displayPriority>530</displayPriority>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Armors/Armor/PrestigeMechlordSuit</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+            <Insulation_Cold>32</Insulation_Cold>
+            <Insulation_Heat>9</Insulation_Heat>
+            <EquipDelay>11</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MechBandwidth>16</MechBandwidth>
+            <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+            <MeleeHitChance>-0.5</MeleeHitChance>
+            <PsychicSensitivity>0.075</PsychicSensitivity>
+            <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+        </equippedStatOffsets>
+        <costList>
+            <NanostructuringChip>2</NanostructuringChip>
+            <PowerfocusChip>1</PowerfocusChip>
+            <Plasteel>160</Plasteel>
+            <ComponentSpacer>8</ComponentSpacer>
+            <Gold>20</Gold>
+        </costList>
+        <apparel>
+            <tags>
+                <li>PrestigeCombatGear</li>
+            </tags>
+            <wornGraphicPath>Armors/Armor/PrestigeMechlordSuit</wornGraphicPath>
+        </apparel>
+        <tradeability>Sellable</tradeability>
+        <tradeTags Inherit="False">
+            <li>HiTechArmor</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- Prestige Mechlord Helmet -->
+
+    <ThingDef ParentName="ApparelArmorHelmetMechanitorBase">
+        <defName>Apparel_ArmorHelmetPrestigeMechlordHelmet</defName>
+        <label>prestige mechlord helmet</label>
+        <description>A heavy plasteel-weave helmet packed with mechanitor-assistance gear. The prestige mechlord helmet dramatically amplifies a mechanitor's bandwidth, but is somewhat less protective than dedicated heavy armor. Expensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+        <graphicData>
+            <texPath>Armors/Helmet/PrestigeMechlordHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>240</MaxHitPoints>
+        </statBases>
+        <equippedStatOffsets>
+            <MechBandwidth>16</MechBandwidth>
+            <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+            <MeleeHitChance>-0.5</MeleeHitChance>
+            <PsychicSensitivity>0.075</PsychicSensitivity>
+            <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+        </equippedStatOffsets>
+        <recipeMaker Inherit="False">
+            <researchPrerequisite>UltraMechtech</researchPrerequisite>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <workSkill>Crafting</workSkill>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <displayPriority>520</displayPriority>
+        </recipeMaker>
+        <costList Inherit="False">
+            <Plasteel>155</Plasteel>
+            <ComponentSpacer>6</ComponentSpacer>
+            <NanostructuringChip>2</NanostructuringChip>
+            <Gold>9</Gold>
+        </costList>
+        <apparel>
+            <tags>
+                <li>PrestigeCombatGear</li>
+            </tags>
+            <scoreOffset>4</scoreOffset>
+            <mechanitorApparel>true</mechanitorApparel>
+            <wornGraphicPath>Armors/Helmet/PrestigeMechlordHelmet</wornGraphicPath>
+            <forceEyesVisibleForRotations>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </forceEyesVisibleForRotations>
+        </apparel>
+    </ThingDef>
+</Defs>
