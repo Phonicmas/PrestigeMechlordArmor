@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <!-- Prestige Mechlord Suit -->
@@ -57,7 +57,7 @@
         <label>prestige mechlord helmet</label>
         <description>A heavy plasteel-weave helmet packed with mechanitor-assistance gear. The prestige mechlord helmet dramatically amplifies a mechanitor's bandwidth, but is somewhat less protective than dedicated heavy armor. Expensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
         <graphicData>
-            <texPath>Armors/Helmet/PrestigeMechlordHelmet</texPath>
+            <texPath>Armors/Helmets/PrestigeMechlord/PrestigeMechlordHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>
@@ -94,7 +94,7 @@
             </tags>
             <scoreOffset>4</scoreOffset>
             <mechanitorApparel>true</mechanitorApparel>
-            <wornGraphicPath>Armors/Helmet/PrestigeMechlordHelmet</wornGraphicPath>
+            <wornGraphicPath>Armors/Helmets/PrestigeMechlord/PrestigeMechlordHelmet</wornGraphicPath>
             <forceEyesVisibleForRotations>
                 <li>1</li>
                 <li>2</li>
@@ -102,4 +102,57 @@
             </forceEyesVisibleForRotations>
         </apparel>
     </ThingDef>
+
+    <!-- Prestige Mechcommander Helmet -->
+
+    <ThingDef ParentName="ApparelArmorHelmetMechanitorBase">
+        <defName>Apparel_ArmorHelmetPrestigeMechCommander</defName>
+        <label>prestige mechcommander helmet</label>
+        <description>A plasteel-weave combat helmet designed for battle mechanitors. It is embedded with computers and signal enhancers that moderately increase the wearer's maximum control bandwidth. This allows the mechanitor to control more mechs. Expensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+        <graphicData>
+            <texPath>Armors/Helmets/PrestigeMechcommander/PrestigeMechcommanderHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <ArmorRating_Sharp>0.69</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.345</ArmorRating_Heat>
+            <Insulation_Cold>3</Insulation_Cold>
+            <Insulation_Heat>1.5</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MechBandwidth>12</MechBandwidth>
+            <PsychicSensitivity>0.075</PsychicSensitivity>
+            <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+        </equippedStatOffsets>
+        <recipeMaker Inherit="False">
+            <researchPrerequisite>StandardMechtech</researchPrerequisite>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <workSkill>Crafting</workSkill>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <displayPriority>710</displayPriority>
+        </recipeMaker>
+        <costList Inherit="False">
+            <SignalChip>1</SignalChip>
+            <Plasteel>60</Plasteel>
+            <ComponentIndustrial>6</ComponentIndustrial>
+            <Gold>9</Gold>
+        </costList>
+        <apparel>
+            <tags>
+                <li>PrestigeCombatGear</li>
+            </tags>
+            <scoreOffset>4</scoreOffset>
+            <mechanitorApparel>true</mechanitorApparel>
+            <wornGraphicPath>Armors/Helmets/PrestigeMechcommander/PrestigeMechcommanderHelmet</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+
 </Defs>

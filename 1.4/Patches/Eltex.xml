@@ -7,7 +7,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "Apparel_PrestigeMechlordSuit" or defName = "Apparel_ArmorHelmetPrestigeMechlordHelmet"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName = "Apparel_PrestigeMechlordSuit" or defName = "Apparel_ArmorHelmetPrestigeMechlordHelmet" or defName = "Apparel_ArmorHelmetPrestigeMechCommander"]/costList</xpath>
 					<value>
 						<VPE_Eltex>1</VPE_Eltex>
 					</value>
