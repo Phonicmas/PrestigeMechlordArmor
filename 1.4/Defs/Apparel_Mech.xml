@@ -25,11 +25,11 @@
             <EquipDelay>11</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <MechBandwidth>16</MechBandwidth>
+            <MechBandwidth>14</MechBandwidth>
             <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
             <MeleeHitChance>-0.5</MeleeHitChance>
-            <PsychicSensitivity>0.075</PsychicSensitivity>
-            <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+            <PsychicSensitivity>0.05</PsychicSensitivity>
+            <PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
         </equippedStatOffsets>
         <costList>
             <NanostructuringChip>2</NanostructuringChip>
@@ -64,11 +64,11 @@
             <MaxHitPoints>240</MaxHitPoints>
         </statBases>
         <equippedStatOffsets>
-            <MechBandwidth>16</MechBandwidth>
+            <MechBandwidth>14</MechBandwidth>
             <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
             <MeleeHitChance>-0.5</MeleeHitChance>
-            <PsychicSensitivity>0.075</PsychicSensitivity>
-            <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+            <PsychicSensitivity>0.05</PsychicSensitivity>
+            <PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
         </equippedStatOffsets>
         <recipeMaker Inherit="False">
             <researchPrerequisite>UltraMechtech</researchPrerequisite>
@@ -122,9 +122,9 @@
             <Insulation_Heat>1.5</Insulation_Heat>
         </statBases>
         <equippedStatOffsets>
-            <MechBandwidth>12</MechBandwidth>
-            <PsychicSensitivity>0.075</PsychicSensitivity>
-            <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+            <MechBandwidth>9</MechBandwidth>
+            <PsychicSensitivity>0.05</PsychicSensitivity>
+            <PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
         </equippedStatOffsets>
         <recipeMaker Inherit="False">
             <researchPrerequisite>StandardMechtech</researchPrerequisite>
